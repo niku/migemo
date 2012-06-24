@@ -1,3 +1,9 @@
+2012-06-24  TAKAHASHI Kaoru  <kaoru@kaisei.org>
+
+	* migemo.el.in: Add "lexical-binding: t" file variable.
+
+	* migemo.rb.in: Add "encoding: euc-jp" file variable.
+
 2006-09-22  Hideyuki SHIRAI  <shirai@meadowy.org>
 
 	* migemo.el.in (migemo-backward): Fix return value, number or nil.
