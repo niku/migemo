@@ -122,8 +122,8 @@ class MigemoDictCache
   def lookup (pattern)
     raise if pattern == nil
     pattern = pattern.downcase
-    idx = @index.bsearch_first do |idx| 
-      key, data = decompose(idx)
+    idx = @index.bsearch_first do |x|
+      key, data = decompose(x)
       key <=> pattern 
     end
     if idx

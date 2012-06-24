@@ -1,5 +1,10 @@
 2012-06-24  TAKAHASHI Kaoru  <kaoru@kaisei.org>
 
+	* migemo.rb.in (Migemo#lookup0, Migemo#lookup_user_dict):
+	Avoid overlapping local variable name in block parameter.
+
+	* migemo-dict.rb (MigemoDictCache#lookup): Ditto.
+
 	* migemo.el.in: Add "lexical-binding: t" file variable.
 
 	* migemo.rb.in: Add "encoding: euc-jp" file variable.
