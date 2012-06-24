@@ -178,7 +178,7 @@ class Migemo
       compiler.push(x.to_katakana)
       expand_words(@static_dict, x).each do |w| compiler.push(w) end
     end
-    expand_words(@static_dict, @pattern).each do |x| compiler.push(x) end
+    expand_words(@static_dict, @pattern).each do |w| compiler.push(w) end
     compiler.uniq
     compiler.optimize(@optimization) if @optimization
     compiler.regex
@@ -189,7 +189,7 @@ class Migemo
     expand_kanas.each do |x| 
       expand_words(@user_dict, x).each do |w| compiler.push(w) end
     end
-    expand_words(@user_dict, @pattern).each do |x| compiler.push(x) end
+    expand_words(@user_dict, @pattern).each do |w| compiler.push(w) end
     compiler.uniq
     compiler.optimize(@optimization) if @optimization
     compiler.regex
