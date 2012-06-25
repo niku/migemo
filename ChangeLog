@@ -1,3 +1,7 @@
+2012-06-25  TAKAHASHI Kaoru  <kaoru@kaisei.org>
+
+	* migemo-convert.rb: Add "encoding: euc-jp" file variable.
+
 2012-06-24  TAKAHASHI Kaoru  <kaoru@kaisei.org>
 
 	* migemo.rb.in (Migemo#lookup0, Migemo#lookup_user_dict):
